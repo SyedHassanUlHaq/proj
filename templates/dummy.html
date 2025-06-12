@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Mr Curly</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #fffefc;
+            color: #333;
+        }
+
+        .service-block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 30px;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .service-block:nth-child(odd) {
+            background-color: #fff4f0;
+        }
+
+        .service-block:nth-child(even) {
+            background-color: #fff9f6;
+            flex-direction: row-reverse;
+        }
+
+        .service-image img {
+            width: 100%;
+            border-radius: 12px;
+            border: 2px solid #f58220;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-text {
+            flex: 1 1 300px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            gap: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f58220;
+        }
+
+        .schedule-btn {
+            background-color: #f58220;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .services-section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .service-block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 60px;
+            gap: 30px;
+        }
+
+        .service-block:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .service-image {
+            flex: 1 1 300px;
+        }
+
+        .service-image img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .service-text {
+            flex: 1 1 300px;
+        }
+
+        .service-text h3 {
+            color: #f58220;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .service-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .form-section {
+            background-color: #f58220;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 800px;
+            color: white;
+        }
+
+        .form-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .form-section p {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 40px;
+        }
+
+        form .full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        button {
+            grid-column: span 2;
+            padding: 15px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #f58220;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #ffece9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            color: #555;
+            font-size: 0.9rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo" width="50" height="50" /> Mr Curly
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="schedule-btn" href="#order-form">Schedule an Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Services Section -->
+    <!-- ✅ Services Intro -->
+    <section style="max-width: 800px; margin: 60px auto 30px auto; text-align: center; padding: 0 20px;">
+        <h1 style="font-size: 2.8rem; color: #f58220; margin-bottom: 20px;">
+            Our Art, Your Story</h1>
+        <p style="font-size: 1.2rem; line-height: 1.8; color: #444;">
+            At Mr Curly, we bring walls to life. Whether you’re looking to energize a space, express your brand’s
+            personality, or turn an idea into bold visual art — we’ve got you covered. Explore our range of mural and
+            graffiti services tailored to your imagination.
+        </p>
+    </section>
+
+    <section class="services-section">
+        <div class="service-block">
+            <div class="service-image">
+                <img src="pic4.jpeg" alt="Mural Art" />
+            </div>
+            <div class="service-text">
+                <h3>Mural Art</h3>
+                <p>Transform your spaces with stunning large-scale murals that reflect culture, passion, and
+                    personality. Perfect for indoor or outdoor walls in homes, offices, or public areas.</p>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-image">
+                <img src="pic1.jpeg" alt="Doodle Art" />
+            </div>
+            <div class="service-text">
+                <h3>Doodles</h3>
+                <p>Fun, whimsical, and wildly creative doodles to fill your walls with energy. Ideal for kids’ rooms,
+                    cafes, and creative studios that want to radiate charm and playfulness.</p>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-image">
+                <img src="pic3.jpeg" alt="Graffiti" />
+            </div>
+            <div class="service-text">
+                <h3>Graffiti</h3>
+                <p>Bold and expressive street-style graffiti tailored to your vision. Whether urban or polished, we
+                    create impactful designs that speak volumes and turn heads.</p>
+            </div>
+        </div>
+
+        <div class="service-block">
+            <div class="service-image">
+                <img src="pic2.jpeg" alt="Customized Art" />
+            </div>
+            <div class="service-text">
+                <h3>Customized Art</h3>
+                <p>Got an idea? Let’s bring it to life! From personalized quotes to abstract visuals, our team
+                    collaborates with you to create one-of-a-kind art that fits your vibe perfectly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ Form Section -->
+    <section class="form-section" id="order-form">
+        <h2>Order Your Custom Mural</h2>
+        <p>Fill in your details to get started with a custom mural made just for your space!</p>
+        <form>
+            <div>
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div>
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number*</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="full-width">
+                <label for="location">Location / Wall Description</label>
+                <input type="text" id="location" name="location">
+            </div>
+            <div class="full-width">
+                <label for="details">Mural Details / Theme</label>
+                <textarea id="details" name="details"
+                    placeholder="What kind of design do you want? Color scheme, mood, references..."></textarea>
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Mr Curly. All rights reserved.
+    </footer>
+</body>
+
+</html>

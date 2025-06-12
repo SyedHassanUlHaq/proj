@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Mr Curly</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000000;
+      color: #ddd;
+    }
+
+    header {
+      background-color: #111111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      gap: 10px;
+      color: #f58220;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ddd;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f58220;
+    }
+
+    .schedule-btn {
+      background-color: #f58220;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, rgba(245, 130, 32, 0.85), rgba(255, 181, 74, 0.85)),
+                  url('your-background.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 30px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #eee;
+    }
+
+    .contact-box {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #111111;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .contact-box h2 {
+      color: #f58220;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 1.1rem;
+      margin: 0;
+      color: #ddd;
+    }
+
+    .contact-box a {
+      color: #f58220;
+      text-decoration: none;
+    }
+    .contact-box a:hover {
+      color: #ffb76b;
+    }
+
+    .social-section {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .social-section h2 {
+      color: #f58220;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .social-icons a {
+      color: #f58220;
+      font-size: 1.8rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #ffb76b; /* Lighter hover version of #f58220 */
+    }
+
+    .contact-form-section {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #111111;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .contact-form-section h2 {
+      color: #f58220;
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+      padding: 12px;
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #222;
+      color: #ddd;
+      font-size: 1rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #aaa;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #f58220;
+      outline: none;
+      box-shadow: 0 0 8px rgba(245, 130, 32, 0.5);
+    }
+
+    .contact-form button {
+      background-color: #f58220;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e66e10;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f58220;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpeg" alt="Logo" width="50" height="50" /> Mr Curly
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+         </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Let's Talk Color & Creativity</h1>
+    <p>We're mural makers, street artists, and wall whisperers. Whether you're a business or a home, we bring blank walls to life.</p>
+  </section>
+
+  <section class="contact-box">
+    <div>
+      <h2>Email Us</h2>
+      <p><a href="mailto:mrcurly.creates@gmail.com">mrcurly.creates@gmail.com</a></p>
+    </div>
+    <div>
+      <h2>Call Us</h2>
+      <p>+1 (234) 567-8901</p>
+    </div>
+    <div>
+      <h2>Visit or Book</h2>
+      <p>Serving Karachi & Beyond</p>
+    </div>
+  </section>
+
+  <section class="social-section">
+    <h2>Follow Us</h2>
+    <div class="social-icons">
+      <a href="https://instagram.com/_mr.curly._" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mr.curly91/?_rdr" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.tiktok.com/@mr..curly" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.youtube.com/@MrCurly_Creates" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.snapchat.com/add/mrcurly93" target="_blank" title="Snapchat"><i class="fab fa-snapchat"></i></a>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
+    <h2>Send us a message!</h2>
+    <form action="/submit" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Mr Curly. All rights reserved.
+  </footer>
+
+</body>
+</html>
